@@ -1,14 +1,14 @@
 # PowerShell
 
-PowerShell Logo goes here
+![Image of Powershell Logo](.\PowerShell_5.0_icon.png)
 
 About PowerShell
 
-**PowerShell** is a powerful command-line shell and scripting language developed by Microsoft. It is designed to help users automate tasks, manage systems, and perform administrative tasks efficiently. Built on the .NET framework, **PowerShell** is both a **_command-line tool_** and **_a scripting environment_**, making it a versatile tool for programmers and system administrators.
+[**PowerShell**]( https://docs.microsoft.com/en-us/powershell/) is a powerful command-line shell and scripting language developed by Microsoft. It is designed to help users automate tasks, manage systems, and perform administrative tasks efficiently. Built on the [.NET framework](https://learn.microsoft.com/en-us/dotnet/framework/get-started/overview), **PowerShell** is both a **_command-line tool_** and **_a scripting environment_**, making it a versatile tool for programmers and system administrators.
 
  "PowerShell is great because we had a series of rockstar engineers add their awesomeness to the project." 
  
- _Source: from the interview with Jeffrey Snover, PowerShell Inventor_
+ _Source: from the [interview](https://evrone.com/blog/jeffrey-snover-interview) with Jeffrey Snover, PowerShell Inventor_
 
 ## Why Learn PowerShell?
 PowerShell is an essential tool for:
@@ -42,60 +42,67 @@ PowerShell is an essential tool for:
  |7.0|2020|Unified Windows PowerShell and PowerShell Core, offering a modern, cross-platform experience. |
 
 ### Version Summary
-Windows PowerShell: Versions 1.0 to 5.1 (Windows-only).
-PowerShell Core: Versions 6.0 and above (cross-platform).
+* **Windows PowerShell:** Versions 1.0 to 5.1 (Windows-only).
+* **PowerShell Core:** Versions 6.0 and above (cross-platform).
 
 
-PowerShell for Beginners
+## PowerShell for Beginners
 
-Basic Commands to Get Started
+### Basic Commands to Get Started
 
-Get-Command: Lists all available commands.
-Get-Help: Provides help information for commands.
-Get-Process: Displays all running processes.
-Stop-Process: Stops a specific process.
-Set-Location: Changes the current directory (like cd in Command Prompt).
-New-Item: Creates a new file or directory.
+* **`Get-Command:`** Lists all available commands.
+* **`Get-Help:`** Provides help information for commands.
+  
+* **`Get-Process:`** Displays all running processes.
 
-Example Script
+* **`Stop-Process:`** Stops a specific process.
+  
+* **`Set-Location:`** Changes the current directory (like **`cd`** in Command Prompt).
+  
+* **`New-Item:`** Creates a new file or directory.
+
+### Example Script
 
 Here’s a simple script to list all files in a directory and display their sizes:
+
+```powershell 
 # Get all files in the current directory
 $files = Get-ChildItem
     
 # Display file names and sizes
 foreach ($file in $files) {
 Write-Output "$($file.Name) - $($file.Length) bytes"
-}
+} 
+```
 
-Editors for PowerShell Scripting
+### Editors for PowerShell Scripting
 
 When writing and debugging PowerShell scripts, using a dedicated editor can greatly enhance your productivity. Here are two popular options:
 
-Windows PowerShell Integrated Scripting Environment (ISE)
+#### Windows PowerShell Integrated Scripting Environment (ISE)
 
-What it is: A built-in editor for Windows PowerShell (versions 1.0 to 5.1).
-Features:
-Syntax highlighting.
-Debugging tools (breakpoints, step-through execution).
-Integrated console for testing scripts.
-Multi-tab interface for working with multiple scripts.
-Best for: Beginners and users working on older versions of PowerShell.
+* What it is: A built-in editor for Windows PowerShell (versions 1.0 to 5.1).
+* **Features:**
+    * Syntax highlighting.
+    * Debugging tools (_breakpoints,  step-through execution_).
+    * Integrated console for testing scripts.
+    * Multi-tab interface for working with multiple scripts.
+* **Best for:** Beginners and users working on older versions of PowerShell.
 
-ISE Image goes here
+![image](.\ISE_panes.png)
 
-Visual Studio Code (VS Code)
+#### Visual Studio Code (VS Code)
 
-What it is: A free, open-source, cross-platform code editor by Microsoft.
-Features:
-Syntax highlighting and IntelliSense for PowerShell.
-Integrated terminal for running scripts.
-Extensions for additional functionality (e.g., PowerShell extension).
-Support for Git and other version control systems.
-Cross-platform (Windows, macOS, Linux).
-Best for: Modern PowerShell development, especially with PowerShell 7 and cross-platform scripting.
+* **What it is:** A free, open-source, cross-platform code editor by Microsoft.
+* **Features:**
+  * Syntax highlighting and IntelliSense for PowerShell.
+  * Integrated terminal for running scripts.
+  * Extensions for additional functionality (_e.g., PowerShell extension_).
+  * Support for **Git** and other version control systems.
+  * Cross-platform (_Windows, macOS, Linux_).
+* **Best for:** Modern PowerShell development, especially with PowerShell 7 and cross-platform scripting.
 
-VSCode Image goes here
+![image](.\vs_code.png)
 
 Useful Resources for Learning PowerShell
 Official PowerShell Documentation
