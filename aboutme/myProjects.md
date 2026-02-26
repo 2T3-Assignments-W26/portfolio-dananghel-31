@@ -1,0 +1,16 @@
+
+# My Projects
+
+
+## User Interface - Making a Single Page Newspaper
+**Description:** A simple one page website using html and css, that includes images, text and advertisements.
+
+**Technologies Used:** VS Code
+
+ ```
+ <main>
+    <h1>The Rubik's Fever</h1>
+    <img src="./assets/images/rubikcover.jpg" alt="cover image of a rubik's cube">
+<h2>Unlocking the Secrets of the Cube</h2>
+```
+
