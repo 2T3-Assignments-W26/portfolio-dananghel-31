@@ -15,7 +15,25 @@
 ```
 ![image](./MyProjects1.jpg)
 
-### Reflection
-I Learned about the implementation of semantic tags such as `article` and `aside` and how to better organize your css using classes.
+#### _Reflection: I Learned about the implementation of semantic tags such as `article` and `aside` and how to better organize your css using classes._
 
-## 
+## Programming 102 - Calories 2D
+**Description:** Calculate various averages (using 2D arrays) of a data table filled with calories based on the meal and day of the week.
+
+**Technologies Used:** VS Code
+
+```
+ int[,] calories = {{900,750,1020},
+ {300, 1000, 2700},
+ {500, 700, 2100},
+ {400, 900, 1780},
+ {600, 1200, 1100},
+ {575, 1150, 1900},
+ {600, 1020, 1700}};
+ double[] dailyAverage;
+ double[] mealAverage;
+ double overallAverage;
+ dailyAverage=CalculateAverageByDay(calories);
+ mealAverage=CalculateAverageByMeal(calories);
+ overallAverage=CalculateOverallAverage(calories);
+ ```
